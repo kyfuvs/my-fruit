@@ -1,1 +1,8 @@
 ** after git modify 
+1. new terminal 
+2. cd my-fruit 
+3. >> ctrl-c => stop npm run dev 
+4. >> npm run build 
+5. >> git add . 
+6. >> git commit -m "after connect git" 
+7. >> git push -u origin master 
