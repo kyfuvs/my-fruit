@@ -22,5 +22,15 @@
 ** upload file to github
 1. new terminal 
 2. cd my-fruit 
-3. git add . 
+3. >> git add . 
+4. >> git commit -m "first commit"
+5. >> git remote add origin https://github.com/kyfuvs/my-fruit.git
+6. >> git push -u origin master 
+=============
+** link vercel to github 
+1. vercel dashboard -> locate project 'my-fruit' 
+2. click 'Coonnect Git Repo' 
+3. Connected Git Repository -> click 'github' 
+4. locate 'my-fruit' -> click 'connect' 
+
 

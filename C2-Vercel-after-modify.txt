@@ -1,4 +1,4 @@
-** after modification
+** after Vercel modification
 1. new terminal 
 2. cd my-fruit 
 3. >> vercel --prod 
