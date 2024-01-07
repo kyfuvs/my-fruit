@@ -1,0 +1,47 @@
+** Vercel deploy
+1. new terminal 
+2. cd my-fruit
+3. >> ctrl-C => stop npm run dev 
+4. >> npm run build 
+5. >> vercel 
+   ------------------
+   Vercel CLI 33.0.2
+  ? Set up and deploy “F:\Andrew\IT_Job_Course\18 Next\11 React
+    \01c Fruit-cart-prisma-Vercel\my-fruit”? [Y/n] => Y
+  ? Which scope do you want to deploy to? 
+    ● kyfuvs-gmailcom  => enter 
+  ? Link to existing project? [y/N] => n 
+  ? What’s your project’s name? (my-fruit) => enter 
+  ? In which directory is your code located? ./ => enter 
+    ==> Results:
+    ------------------
+    Local settings detected in vercel.json:
+    Auto-detected Project Settings (Next.js):
+    - Build Command: next build
+    - Development Command: next dev --port $PORT
+    - Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+    - Output Directory: Next.js default
+    --------------------
+    ? Want to modify these settings? [y/N] => N 
+    ==> Results:
+    -------------------
+    🔗  Linked to kyfuvs-gmailcom/my-fruit (created .vercel and added it to .gitignore)
+    🔍  Inspect: https://vercel.com/kyfuvs-gmailcom/my-fruit/G3azgp86nHFX3Tim5xVJYyatuBbj [2s]
+    ✅  Preview: https://my-fruit-3mg0yzh0p-kyfuvs-gmailcom.vercel.app [2s]   
+    📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+    💡  To change the domain or build command, go to https://vercel.com/kyfuvs-gmailcom/my-fruit/settings
+    --------------------
+6. >> vercel --prod
+   ==> Results:
+   --------------------------------
+   Vercel CLI 33.0.2
+    🔍  Inspect: https://vercel.com/kyfuvs-gmailcom/my-fruit/GTPF8GSmQWa4XttiE7YzUt3N8bkM [2s]
+    ✅  Production: https://my-fruit-owynoi8b3-kyfuvs-gmailcom.vercel.app [2s]
+   --------------------------------
+7. inspect deployment in vercel 
+  
+
+
+
+
+

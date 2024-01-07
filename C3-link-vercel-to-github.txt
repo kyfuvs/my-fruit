@@ -1,0 +1,26 @@
+** link vercel to github
+=============
+** github login 
+1. login github 
+2. new repo -> 'my-fruit' 
+3. Option 1:
+   ---------------
+   echo "# my-fruit" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/kyfuvs/my-fruit.git
+    git push -u origin main
+    ---------------
+    Or Option 2:
+    -------------------
+    git remote add origin https://github.com/kyfuvs/my-fruit.git
+    git branch -M main
+    git push -u origin main
+============
+** upload file to github
+1. new terminal 
+2. cd my-fruit 
+3. git add . 
+

@@ -1,0 +1,12 @@
+** after modification
+1. new terminal 
+2. cd my-fruit 
+3. >> vercel --prod 
+   ==> Results:
+   ---------------------
+   Vercel CLI 33.0.2
+    🔍  Inspect: https://vercel.com/kyfuvs-gmailcom/my-fruit/22cpzfyHYkL1XuJ5GQZy5mJzQgpU [3s]
+    ✅  Production: https://my-fruit-qxib2ik13-kyfuvs-gmailcom.vercel.app [3s]
+    -------------------
+4. https://my-fruit.vercel.app/
+5. refresh browser => reflect the changes 
