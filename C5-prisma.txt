@@ -1,0 +1,36 @@
+** Install prisma
+https://www.prisma.io/docs/getting-started/quickstart
+
+prisma-mongodb
+https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb-typescript-mongodb
+
+1. New Terminal 
+2. cd my-next 
+3. >> npm install prisma --save-dev
+   ==> "prisma": "^5.7.1",
+4. >> npx prisma init 
+   ==> generate 2 files
+       ----------------------------
+       1. prisma/schema.prisma 
+       2. .env 
+       ----------------------------
+       then edit 1 & 2 
+5. >> npx prisma generate
+   ==> install "@prisma/client" automatically
+       -------------
+       "@prisma/client": "^5.7.1",
+       -------------
+6. >> npx prisma db push 
+   ==> Results:
+   --------------------
+  Applying the following changes:
+
+    [+] Collection `Product`
+
+
+    Your database indexes are now in sync with your 
+    Prisma schema. Done in 6.08s
+    -------------------
+    
+
+

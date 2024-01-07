@@ -1,0 +1,25 @@
+** vercel after prisma added 
+1. package.json 
+   ---------------------
+   "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+   ---------------------
+==============
+2. Vercel -> locate project 'my-fruit'
+   -> Settings 
+   -> Environment variable 
+   -> key => DATABASE_URL
+   -> value => mongodb+srv://kyfuvs:password123456@cluster0.4nszwoj.mongodb.net/Fruits
+
+2. new terminal
+3. cd my-fruit 
+4. >> ctrl-c => stop npm run dev 
+5. >> npm run build 
+6. >> git add .
+7. >> git commit -m "after add prisma"
+8. >> git push -u origin master 
+================
+** see result in vercel 
+1. https://my-fruit.vercel.app/
+2. refresh browser to reflect changes 

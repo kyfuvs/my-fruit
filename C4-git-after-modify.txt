@@ -6,3 +6,7 @@
 5. >> git add . 
 6. >> git commit -m "after connect git" 
 7. >> git push -u origin master 
+================
+** see result in vercel 
+1. https://my-fruit.vercel.app/
+2. refresh browser to reflect changes 

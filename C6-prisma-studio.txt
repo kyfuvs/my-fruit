@@ -1,0 +1,5 @@
+** Install prisma studio
+1. New Terminal 
+2. cd my-next 
+3. >> npx prisma studio
+   ==> Prisma Studio is up on http://localhost:5555
