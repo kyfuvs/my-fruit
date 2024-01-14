@@ -1,0 +1,109 @@
+**  data fetching api typescript
+https://medium.com/@diegogauna.developer/restful-api-using-typescript-and-react-hooks-3d99bdd0cd39 
+
+1. Create a Typescript interface for the data
+   -------------
+   interface User {
+  id: number;
+  name: string;
+  email: string;
+  }
+  --------------
+2. Create a function for fetching data
+  ----
+  async function fetchUsers(): Promise<User[]> {
+  const response = await fetch('/api/users');
+  const data = await response.json();
+  return data;
+  } 
+  ----
+3. Create a React component to display the data
+  --------------
+  function UserList() {
+  const [users, setUsers] = useState<User[]>([]);
+  useEffect(() => {
+    fetchUsers().then((data) => setUsers(data));
+  }, []);
+  ---------------
+4. create jsx 
+  ---
+   return (
+    <div>
+      {users.map((user) => (
+        <div key={user.id}>
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
+      ))}
+    </div>
+  );
+  }
+ ----
+5. Add error handling to the component
+  --------------
+function UserList() {
+  const [users, setUsers] = useState<User[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  -----
+   useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await fetchUsers();
+        setUsers(data);
+      } catch (error) {
+        setError(error.message);
+      }
+    }
+    fetchData();
+  }, []);
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+  return (
+    <div>
+      {users.map((user) => (
+        <div key={user.id}>
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+-----
+function App() {
+  return (
+    <div>
+      <h1>User List</h1>
+      <UserList />
+    </div>
+  );
+}
+
+------
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+===========================
+** next fetching api
+https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating
+
+---------------------------
+async function getData() {
+  const res = await fetch('https://api.example.com/...')
+
+  if (!res.ok) {
+        throw new Error('Failed to fetch data')
+  }
+ 
+  return res.json()
+}
+ 
+export default async function Page() {
+  const data = await getData()
+ 
+  return <main></main>
+}
+------------------------
